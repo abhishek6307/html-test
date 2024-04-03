@@ -1,0 +1,430 @@
+
+body{
+  font-family: 'Poppins';
+}
+.offence_St {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 50px;
+
+}
+.offence_St h4.subheading {
+  font-size: 18px;
+  font-weight: 500;
+  color: grey;
+  margin: 0;
+text-align: center;
+}
+.offence_St h1.heading {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 500;
+  margin: 5px 0px;
+}
+.offence_St .infos h3 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+.offence_St .infos p, .discription p {
+  font-size: 16px;
+  color: grey;
+  margin: 0;
+}
+.offence_St .discription{
+  margin-top: 30px;
+}
+.offence_St .discription h4 {
+  margin: 0px 0px 10px 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.offence_St .discription h6{
+  font-size: 16px;
+  margin-top: 25px;
+  color: grey;
+  font-weight: 500;
+}
+.offence_St .social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.offence_St .btn-1 {
+  border: none;
+  display: block;
+
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #011042;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 13px;
+  background-color: #bfe005;
+  padding: 17px 30px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.offence_St .btn-1 span {
+  position: relative; 
+  z-index: 1;
+  
+}
+.offence_St .btn-1:hover {
+  color: white;
+}
+.offence_St .btn-1 i {
+  color: #011042;
+  margin-left: 12px;
+}
+.offence_St .btn-1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 610%;
+    width: 240%;
+    background: #011042;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-96%) translateY(-33%) rotate(0deg);
+}
+
+.offence_St .btn-1:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+.offence_St .btn-1:hover::after span{
+  color: white;
+}
+.offence_St .shareSocial {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .offence_St .shareSocial {
+    flex-flow: column;
+  }
+}
+.offence_St .shareSocial .socialTitle {
+  font-weight: 500;
+  margin: 0 5px 0 0;
+  font-size: 18px;
+  color: grey;
+}
+@media (max-width: 767px) {
+  .offence_St .shareSocial .socialTitle {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+.offence_St .shareSocial .socialList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.offence_St .shareSocial .socialList li {
+  margin: 5px;
+}
+.offence_St .shareSocial .socialList li:first-child {
+  padding-left: 0;
+}
+.offence_St .shareSocial .socialList li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  text-decoration: none;
+  background-color: #bfbfbf;
+  color: #fff;
+  transition: 0.35s;
+}
+.offence_St .shareSocial .socialList li a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: top left;
+  transform: scale(1) translate(-50%, -50%);
+  transition: 0.35s;
+  font-size: 25px;
+}
+.offence_St .shareSocial .socialList li a:hover i {
+  transform: scale(1.5) translate(-50%, -50%);
+}
+.offence_St .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.offence_St .tabs>section {
+  order: 999;
+  width: 100%;
+  display: none;
+}
+
+.offence_St .tabs>input {
+  opacity: 0;
+  position: absolute;
+}
+
+.offence_St .tabs>input[type=radio]:checked+label {
+  color: black;
+}
+
+.offence_St .tabs>input[type=radio]:checked+label+section {
+  display: unset;
+}
+
+.offence_St .tabs>label {
+  padding: .5em 1em;
+color: grey;
+
+  border-bottom: 1px solid #798f99;
+}
+
+.offence_St .offence_St .tabs>label:last-of-type {
+  border-right: none;
+}
+.offence_St .carousel-vp {
+overflow: hidden;
+}
+.offence_St .cCarousel-inner {
+display: flex;
+transition: transform 0.5s ease;
+}
+
+
+.offence_St #cCarousel {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.offence_St .fa.fa-angle-left {
+position: absolute;
+left: -30px;
+top: 50%;
+font-size: 45px;
+color: #999999;
+}
+.offence_St i.fa.fa-angle-right {
+position: absolute;
+right: -30px;
+top: 50%;
+font-size: 45px;
+color: #999999;
+}
+
+.offence_St  #cCarousel #prev {
+  left: -60px;
+}
+
+.offence_St #cCarousel #next {
+  right: -60px;
+} 
+@media (max-width: 770px) {
+  .offence_St #carousel-vp {
+    width: 510px;
+  }
+}
+
+@media (max-width: 510px) {
+  .offence_St #carousel-vp {
+    width: 250px;
+  }
+}
+
+.offence_St .pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.offence_St span.active {
+  color: rgb(0, 0, 0)!important;
+  font-size: 25px;
+  border-bottom: 3px solid #bfe005;
+  font-weight: 600;
+}
+.offence_St .pagination span {
+padding: 3px 10px;
+color: grey;
+}
+
+
+.offence_St #cCarousel #cCarousel-inner {
+  display: flex;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  gap: 20px;
+  height: 520px;
+  left: 0px;
+}
+
+
+
+
+.offence_St .cCarousel-item {
+  width: 530px;
+  border-left: 10px solid #bfe005;
+  height: 370px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 25px;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 8px 8px -4px rgb(6, 6, 6);
+  flex: 0 0 auto;
+  margin-right: 20px; 
+}
+.offence_St .cCarousel-item .infos {
+  background: white;
+  color: black;
+}
+
+.offence_St .cCarousel-item .infos button {
+  background: #222;
+  padding: 10px 30px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.offence_St div#pagination {
+  text-align: center;
+  margin-top: 50px;
+}
+.offence_St div#pagination button {
+  border: none;
+  background-color: white;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.offence_St button.active {
+  font-size: 25px !important;
+ border-bottom: 4px solid #bfe005!important;
+ font-weight:bolder!important;
+}
+.offence_St div#pagination button {
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  padding: 10px;
+ font-weight: 500;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+.offence_St {
+      width: 90%;
+  }
+  .offence_St .cCarousel-item {
+      width: 384px;
+  }
+  .offence_St #cCarousel #cCarousel-inner {
+      height: 590px;
+  }
+  .offence_St .cCarousel-item {
+      height: 500px;
+  }
+  .offence_St .shareSocial .socialList li a {
+      width: 30px;
+      height: 30px;
+  }
+  .offence_St .shareSocial .socialList li a i {
+      font-size: 14px;
+  }
+  .offence_St .shareSocial .socialList {
+      flex-flow: row nowrap;
+  }
+  .offence_St .btn-1 {
+      font-size: 14px;
+      padding: 10px 25px;
+  }
+  .offence_St .shareSocial .socialTitle {
+      margin: 0px 0px 0 0;
+      font-size: 16px;
+  }
+  .offence_St .tabs {
+      margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) { 
+.offence_St #carousel-vp {
+  width: 462px;
+}
+.offence_St .social {
+  flex-direction: column;
+}
+.offence_St .btn-1 {
+  width: 70%;
+  padding: 14px 25px;
+}
+.offence_St #cCarousel #cCarousel-inner {
+  height: 585px;
+}
+.offence_St .cCarousel-item {
+  height: 542px;
+  width: 420px;
+}
+.offence_St #cCarousel #prev {
+  left: 0px;
+}
+.offence_St #cCarousel #next {
+  right: 0px;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 768px) { 
+.offence_St h1.heading {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  margin: 5px 0px;
+}
+.offence_St {
+  width: 100%;
+  margin: 0px 0px;
+  position: relative;
+  margin-top: 50px;
+}
+.offence_St .cCarousel-item {
+  height: 573px;
+  width: 335px;
+}
+.offence_St #carousel-vp {
+  width: 100%;
+  height: 570px;
+}
+.offence_St #cCarousel #cCarousel-inner {
+  height: 705px;
+}
+.offence_St .shareSocial {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  align-content: center;
+}
+.offence_St div#pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+.offence_St .tabs {
+  margin-top: 20px;
+}
+.offence_St .fa.fa-angle-left {
+  left: 0px;
+}
+}
